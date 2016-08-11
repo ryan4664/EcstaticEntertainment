@@ -1,165 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <link rel="icon" href="images/favicon-logo.ico">
-      <title>Ecstatic Entertainment</title>
-      <!-- Bootstrap core CSS -->
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-      <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon-logo.ico">
+    <title>Ecstatic Entertainment</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
-      <!-- Custom styles for this template -->
-      <link href="css/carousel.css" rel="stylesheet">
-      <!-- Custom styles -->
-      <link href="css/style.css" rel="stylesheet">
-      <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-   </head>
-   <!-- NAVBAR
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+</head>
+<!-- NAVBAR
       ================================================== -->
-   <body>
-      <script>
+
+<body>
+    <script>
         window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '1654548761481335',
-            xfbml      : true,
-            version    : 'v2.4'
-          });
+            FB.init({
+                appId: '1654548761481335',
+                xfbml: true,
+                version: 'v2.4'
+            });
         };
 
-        (function(d, s, id){
-           var js, fjs = d.getElementsByTagName(s)[0];
-           if (d.getElementById(id)) {return;}
-           js = d.createElement(s); js.id = id;
-           js.src = "//connect.facebook.net/en_US/sdk.js";
-           fjs.parentNode.insertBefore(js, fjs);
-         }(document, 'script', 'facebook-jssdk'));
-      </script>
-      <div class="navbar-wrapper">
-         <div class="container">
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="navbar-wrapper">
+        <div class="container">
             <nav class="navbar navbar-inverse navbar-static-top">
-               <div class="container">
-                  <div class="navbar-header">
-                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                     <span class="sr-only">Toggle navigation</span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     </button>
-                     <a class="navbar-brand" href="index.html">Ecstatic Entertainment SK</a>
-                  </div>
-                  <div id="navbar" class="navbar-collapse collapse">
-                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="photo.html">Photography</a></li>
-                        <li><a href="offer.html">What We Offer</a></li>
-                        <li class="dropdown">
-                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Build Your Event <span class="caret"></span></a>
-                           <ul class="dropdown-menu">
-                              <li><a href="make-event-wedding.html">Weddings</a></li>
-                              <li><a href="make-event-grad.html">Graduation</a></li>
-                              <li><a href="make-event-staff-party.html">Staff Party</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="contact.html">Request An Event</a></li>
-                           </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                     </ul>
-                  </div>
-               </div>
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Ecstatic Entertainment SK</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="offer.html">What We Offer</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                    aria-expanded="false">Build Your Event <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="make-event-wedding.html">Weddings</a></li>
+                                    <li><a href="make-event-grad.html">Graduation</a></li>
+                                    <li><a href="make-event-staff-party.html">Staff Party</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="contact.html">Request An Event</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-         </div>
-      </div>
-      <!-- Carousel
+        </div>
+    </div>
+    <!-- Carousel
          ================================================== -->
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-         <!-- Indicators -->
-         <ol class="carousel-indicators">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
-         </ol>
-         <div class="carousel-inner" role="listbox">
+        </ol>
+        <div class="carousel-inner" role="listbox">
             <div class="item active">
-               <img class="first-slide carousel-image" src="images/carousel1-crop.jpg" alt="First slide">
-               <div class="container">
-                  <div class="carousel-caption">
-                     <h1>Ecstatic Entertainment SK</h1>
-                     <p>Let the adventure begin!</p>
-                     <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>-->
-                  </div>
-               </div>
+                <img class="first-slide carousel-image" src="images/carousel1-crop.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Ecstatic Entertainment SK</h1>
+                        <p>Let the adventure begin!</p>
+                        <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>-->
+                    </div>
+                </div>
             </div>
             <div class="item">
-               <img class="second-slide carousel-image" src="images/carousel2Alt.jpg" alt="Second slide">
-               <div class="container">
-                  <div class="carousel-caption">
-                     <h1>What We Offer</h1>
-                     <p>We do a wide range of events such as weddings, graduations, special events, clubs, etc.</p>
-                     <p><a class="btn btn-lg btn-primary" href="offer.html" role="button">Learn more</a></p>
-                  </div>
-               </div>
+                <img class="second-slide carousel-image" src="images/carousel2Alt.jpg" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>What We Offer</h1>
+                        <p>We do a wide range of events such as weddings, graduations,
+                            special events, clubs, etc.</p>
+                        <p><a class="btn btn-lg btn-primary" href="offer.html" role="button">Learn more</a></p>
+                    </div>
+                </div>
             </div>
             <div class="item">
-               <img class="third-slide carousel-image" src="images/carousel3-crop.jpg" alt="Third slide">
-               <div class="container">
-                  <div class="carousel-caption">
-                     <h1>Build your own dream event</h1>
-                     <p>Instead of offering you certain packages to choose from, we let you customize your event with everything you may need or want. Click build your own event and begin putting together the masterpiece you have in mind!</p>
-                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Build your event now</a></p>
-                  </div>
-               </div>
+                <img class="third-slide carousel-image" src="images/carousel3-crop.jpg" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Build your own dream event</h1>
+                        <p>Instead of offering you certain packages to choose from,
+                            we let you customize your event with everything you may
+                            need or want. Click build your own event and begin putting
+                            together the masterpiece you have in mind!</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Build your event now</a></p>
+                    </div>
+                </div>
             </div>
-         </div>
-         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-         <span class="sr-only">Previous</span>
-         </a>
-         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-         <span class="sr-only">Next</span>
-         </a>
-      </div>
-      <!-- /.carousel -->
-      <!-- Marketing messaging and featurettes
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- /.carousel -->
+    <!-- Marketing messaging and featurettes
          ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-      <div class="container marketing">
-         <!-- START THE FEATURETTES -->
-         <div class="row featurette">
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="container marketing">
+        <!-- START THE FEATURETTES -->
+        <div class="row featurette">
             <div class="col-xs-12 col-md-7">
-               <h2 class="featurette-heading">Ecstatic Entertainment.</h2>
-               <p class="lead">At Ecstatic Entertainment we provide our professional opinion to help you enjoy and experience the day and night that you deserve! Not only do we use the industry leading equipment at each and every event, we have Regina's top DJ's in place to keep everyone happy throughout the entire event! If you can't find what you're looking for within our website, don't hesitate to email or call.</p>
-               <div class="fb-widgets">
-                  <div class="fb-share-button" data-href="https://www.facebook.com/Ecstatic-Entertainment-SK-552127184852023/timeline/" data-layout="box_count">
-               </div>
-               <div class="fb-follow" data-href="https://www.facebook.com/Ecstatic-Entertainment-SK-552127184852023/timeline/" data-layout="box_count" data-show-faces="true"></div>
-               </div>
+                <h2 class="featurette-heading">Ecstatic Entertainment.</h2>
+                <p class="lead">At Ecstatic Entertainment we provide our professional opinion to
+                    help you enjoy and experience the day and night that you deserve!
+                    Not only do we use the industry leading equipment at each and
+                    every event, we have Regina's top DJ's in place to keep everyone
+                    happy throughout the entire event! If you can't find what you're
+                    looking for within our website, don't hesitate to email or call.</p>
+                <div class="fb-widgets">
+                    <div class="fb-share-button" data-href="https://www.facebook.com/Ecstatic-Entertainment-SK-552127184852023/timeline/"
+                        data-layout="box_count">
+                    </div>
+                    <div class="fb-follow" data-href="https://www.facebook.com/Ecstatic-Entertainment-SK-552127184852023/timeline/"
+                        data-layout="box_count" data-show-faces="true"></div>
+                </div>
             </div>
             <div class="col-xs-12 col-md-5">
-               <img class="featurette-image img-responsive center-block landing-img" src="images/logo.jpg" alt="Logo image">
+                <img class="featurette-image img-responsive center-block landing-img" src="images/logo.jpg"
+                    alt="Logo image">
             </div>
-         </div>
-         <hr class="featurette-divider">
-         <!-- /END THE FEATURETTES -->
-         <!-- FOOTER -->
-         <footer>
+        </div>
+        <hr class="featurette-divider">
+        <!-- /END THE FEATURETTES -->
+        <!-- FOOTER -->
+        <footer>
             <p class="pull-right"><a href="#">Back to top</a></p>
             <p>&copy; 2015 Ecstatic Entertainment SK &middot;</p>
-         </footer>
-      </div>
-      <!-- /.container -->
-      <!-- Bootstrap core JavaScript
+        </footer>
+    </div>
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
          ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-   </body>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
 </html>
