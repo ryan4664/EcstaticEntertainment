@@ -1,0 +1,16 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryan4664/realityshow.git"
+  },
+  "author": "Ryan Donohue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryan4664/realityshow/issues"
+  },
+  "homepage": "https://github.com/ryan4664/realityshow#readme"
+}

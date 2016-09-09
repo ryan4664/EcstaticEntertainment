@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="reviewApp">
+
+<head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/angular-ui-notification/dist/angular-ui-notification.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Ecstatic Entertainment DJs - Review</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a ui-sref="home" href="">Home</a></li>
+                    <li><a ui-sref="about" href="">About</a></li>
+                    <li><a ui-sref="register" href="">Register</a></li>
+                    <li><a ui-sref="showList" href="">Show List</a></li>
+                    <li><a ui-sref="showProfile" href="">Show Profile</a></li>
+                    <li><a ui-sref="createPool" href="">Create Pool</a></li>
+                    <li><a ui-sref="logout" href="">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div ui-view></div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script src="node_modules/angular-ui-notification/dist/angular-ui-notification.min.js"></script>
+    <script src="app.js"></script>
+    <!-- Services -->
+    <script src="services/user.service.js"></script>
+    <!-- Controllers -->
+    <script src="pages/login/login.controller.js"></script>
+</body>
+
+</html>
