@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('RealityShow')
+angular.module('ReviewApp')
     .factory('UserService', UserService);
 
 function UserService($http) {

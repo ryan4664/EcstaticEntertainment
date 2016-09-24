@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('RealityShow')
+angular.module('ReviewApp')
     .controller('LoginController', LoginController);
 
 function LoginController($scope, UserService, $state) {
