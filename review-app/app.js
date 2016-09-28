@@ -5,7 +5,7 @@ angular.module('ReviewApp').config(function($stateProvider, $urlRouterProvider) 
     $stateProvider
         .state('home', {
             url: '/home',
-            templateUrl: './pages/login/login.html',
+            templateUrl: './pages/home/home.html',
             controller: 'HomeController'
         })
         .state('offer', {

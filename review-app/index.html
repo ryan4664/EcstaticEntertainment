@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./node_modules/angular-ui-notification/dist/angular-ui-notification.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="icon" href="./assets/favicon-logo.ico">
 </head>
 
 <body>
@@ -24,12 +26,18 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><a ui-sref="home" href="">Home</a></li>
-                    <li><a ui-sref="about" href="">About</a></li>
-                    <li><a ui-sref="register" href="">Register</a></li>
-                    <li><a ui-sref="showList" href="">Show List</a></li>
-                    <li><a ui-sref="showProfile" href="">Show Profile</a></li>
-                    <li><a ui-sref="createPool" href="">Create Pool</a></li>
-                    <li><a ui-sref="logout" href="">Logout</a></li>
+                    <li><a ui-sref="offer" href="">What We Offer</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Build Your Event <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a ui-sref="buildWedding">Weddings</a></li>
+                            <li><a ui-sref="buildGrad">Graduation</a></li>
+                            <li><a ui-sref="buildStaff">Staff Party</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a ui-sref="requestEvent">Request An Event</a></li>
+                        </ul>
+                    </li>
+                    <li><a ui-sref="testimonies" href="">Testimonies</a></li>
                 </ul>
             </div>
         </nav>
