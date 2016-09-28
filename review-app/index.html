@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html ng-app="reviewApp">
+<html ng-app="ReviewApp">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/angular-ui-notification/dist/angular-ui-notification.min.css"
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./node_modules/angular-ui-notification/dist/angular-ui-notification.min.css"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="/">Ecstatic Entertainment DJs - Review</a>
@@ -49,7 +53,16 @@
     <!-- Services -->
     <script src="services/user.service.js"></script>
     <!-- Controllers -->
+    <script src="pages/approve/approve.controller.js"></script>
+    <script src="pages/buildGrad/buildGrad.controller.js"></script>
+    <script src="pages/buildStaff/buildStaff.controller.js"></script>
+    <script src="pages/buildWedding/buildWedding.controller.js"></script>
+    <script src="pages/contact/contact.controller.js"></script>
+    <script src="pages/home/home.controller.js"></script>
     <script src="pages/login/login.controller.js"></script>
+    <script src="pages/offer/offer.controller.js"></script>
+    <script src="pages/request/request.controller.js"></script>
+    <script src="pages/testimonies/testimonies.controller.js"></script>
 </body>
 
 </html>
