@@ -12,5 +12,9 @@
   "bugs": {
     "url": "https://github.com/ryan4664/realityshow/issues"
   },
-  "homepage": "https://github.com/ryan4664/realityshow#readme"
+  "homepage": "https://github.com/ryan4664/realityshow#readme",
+  "dependencies": {
+    "angular-animate": "^1.5.8",
+    "angular-touch": "^1.5.8"
+  }
 }

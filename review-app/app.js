@@ -1,4 +1,4 @@
-var reviewApp = angular.module('ReviewApp', ['ui.router', 'ui.bootstrap', 'ui-notification']);
+var reviewApp = angular.module('ReviewApp', ['ui.router', 'ui.bootstrap', 'ui-notification', 'ngAnimate', 'ngTouch']);
 
 angular.module('ReviewApp').config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
