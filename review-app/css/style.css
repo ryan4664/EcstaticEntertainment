@@ -10,52 +10,42 @@ body {
 
 .carousel-image {
     opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
+    filter: alpha(opacity=60);
+    /* For IE8 and earlier */
 }
 
 hr {
-	border-top: 1px solid rgba(19, 19, 19, 1);
+    border-top: 1px solid rgba(19, 19, 19, 1);
 }
 
 .page-title {
-	text-align: center;
-	font-size: 28px
+    text-align: center;
+    font-size: 28px
 }
 
 a {
-	color: rgba(19, 19, 19, 1);
+    color: rgba(19, 19, 19, 1);
 }
 
 a:hover {
-	color: rgba(19, 19, 19, 1);
+    color: rgba(19, 19, 19, 1);
 }
 
 footer>p {
-	color: rgba(19, 19, 19, 1);
-}
-
-.btn-primary {
-	background-color: rgba(191, 33, 30, 0.80);
-	border-color: #6F6F6F;
-
-}
-
-.btn-primary:hover, .btn-primary:focus, 
-.btn-primary.focus, .btn-primary.active, 
-.btn-primary:active, .btn-primary:active:hover {
-	background-color: rgba(191, 33, 30, 1);
-	border-color: black;
+    color: rgba(19, 19, 19, 1);
 }
 
 .fb-widgets {
-	margin: 0 auto;
+    margin: 0 auto;
 }
+
 
 /***************************
 ****************************
 		End Global
 ****************************
 ***************************/
+
 
 /***************************
 ****************************
@@ -64,19 +54,21 @@ footer>p {
 ***************************/
 
 .landing-img {
-	width: 70%;
-	height: auto;
+    width: 70%;
+    height: auto;
 }
 
 .featurette-heading {
-	margin-top: 30px;
+    margin-top: 30px;
 }
+
 
 /***************************
 ****************************
 		End Index
 ****************************
 ***************************/
+
 
 /***************************
 ****************************
@@ -85,46 +77,47 @@ footer>p {
 ***************************/
 
 .navbar-wrapper .navbar {
-	border-radius: 0px;
-	font-family: 'Droid Sans', sans-serif;
-	letter-spacing: 1px;
+    border-radius: 0px;
+    font-family: 'Droid Sans', sans-serif;
+    letter-spacing: 1px;
 }
 
 .navbar-inverse {
-	background-color: #252525;
-	border: 0px;
+    background-color: #252525;
+    border: 0px;
 }
 
 .navbar-inverse .navbar-brand {
-	color: #E4E4E4;
+    color: #E4E4E4;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-	color: #E4E4E4;
+    color: #E4E4E4;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-	background-color: #656565;
-
+    background-color: #656565;
 }
 
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
-	background-color: #656565;
+    background-color: #656565;
 }
 
-.navbar-wrapper-alt{ 
-	position:relative;
-	top:0;
-	right:0;
-	left:0;
-	z-index:20
+.navbar-wrapper-alt {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20
 }
+
 
 /***************************
 ****************************
 		End Navbar
 ****************************
 ***************************/
+
 
 /***************************
 ****************************
@@ -133,31 +126,33 @@ footer>p {
 ***************************/
 
 .featurette-image-small {
-	width: 40%;
-	height: auto;
-	padding-bottom: 5px
+    width: 40%;
+    height: auto;
+    padding-bottom: 5px
 }
 
 .featurette-image-smaller {
-	width: 30%;
-	height: auto;
-	padding-bottom: 5px
+    width: 30%;
+    height: auto;
+    padding-bottom: 5px
 }
 
 .featurette-divider {
-	margin: 30px 0;
+    margin: 30px 0;
 }
 
 .team-divider {
-	margin: 30px auto;
-	width: 85%;
+    margin: 30px auto;
+    width: 85%;
 }
+
 
 /***************************
 ****************************
 		End Featurette
 ****************************
 ***************************/
+
 
 /***************************
 ****************************
@@ -166,23 +161,25 @@ footer>p {
 ***************************/
 
 form {
-	margin-right: 10%;
+    margin-right: 10%;
 }
 
 .contact-submit {
-	width: 100%;
+    width: 100%;
 }
 
 .alert {
-	padding: 6px 12px;
-	margin: 5px 0 0 0;
+    padding: 6px 12px;
+    margin: 5px 0 0 0;
 }
+
 
 /***************************
 ****************************
 		End Form
 ****************************
 ***************************/
+
 
 /***************************
 ****************************
@@ -191,21 +188,22 @@ form {
 ***************************/
 
 .team-member-title {
-	margin-top: 30px;
-	font-size: 30px;
+    margin-top: 30px;
+    font-size: 30px;
 }
 
-
-.member-profile-image{
-	width: 75%;
-	height: auto;
+.member-profile-image {
+    width: 75%;
+    height: auto;
 }
+
 
 /***************************
 ****************************
 		End Team
 ****************************
 ***************************/
+
 
 /***************************
 ****************************
@@ -214,21 +212,22 @@ form {
 ***************************/
 
 .open-photo-gallery {
-	margin: 0 auto;
-	width: 500px;
+    margin: 0 auto;
+    width: 500px;
 }
 
 .photo-gallery {
-	width: 50%;
-	height: auto;
-	margin: 0 auto;
-	padding: 5px;
-	float: left;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    float: left;
 }
 
 .photo-gallery-top {
-	height: 374px;
+    height: 374px;
 }
+
 
 /*.photo-gallery-bottom {
 	width: 25%;
@@ -238,19 +237,21 @@ form {
 }*/
 
 #photoswipe-btn {
-	width: 30%;
-	margin-top: 25px;
+    width: 30%;
+    margin-top: 25px;
 }
 
 .photo-gallery-container {
-	text-align: center;
+    text-align: center;
 }
+
 
 /***************************
 ****************************
 	  End Offer/Gallery
 ****************************
 ***************************/
+
 
 /***************************
 ****************************
@@ -259,46 +260,45 @@ form {
 ***************************/
 
 .checkbox-inline {
-	font-size: 20px;
-	padding-bottom: 10px;
-	padding-top: 10px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
-.checkbox-text{
-	padding-left: 20px;
+.checkbox-text {
+    padding-left: 20px;
 }
 
 input[type=checkbox] {
-	width: 20px; 
-	height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .checkbox-container {
-	text-align: center;
+    text-align: center;
 }
 
 .total-text {
-	font-size: 30px;
+    font-size: 30px;
 }
 
-.total-container{
-	text-align: center;
-	padding-top: 20px;
+.total-container {
+    text-align: center;
+    padding-top: 20px;
 }
 
 .offer-btn {
-	margin: 0;
-	width: 30%;
+    margin: 0;
+    width: 30%;
 }
 
 #uplightingInput {
-	width: 50px;
+    width: 50px;
 }
 
 .event-info-field {
-	padding-top: 25px;
+    padding-top: 25px;
 }
-
 
 
 /***************************
@@ -308,11 +308,11 @@ input[type=checkbox] {
 ***************************/
 
 .offer-block {
-	padding: 0px 15px;
+    padding: 0px 15px;
 }
 
 .carousel-alt-page {
-	height: 0px;
+    height: 0px;
 }
 
 
@@ -323,37 +323,35 @@ input[type=checkbox] {
 ***************************/
 
 @media (max-width: 950px) {
-	.featurette-image-small {
-		padding-top: 5px
-	}
-
-	.featurette-image-smaller {
-		padding-top: 5px
-	}
+    .featurette-image-small {
+        padding-top: 5px
+    }
+    .featurette-image-smaller {
+        padding-top: 5px
+    }
 }
 
 @media (max-width: 327px) {
-	.navbar-brand {
-		font-size: 14px
-	}
+    .navbar-brand {
+        font-size: 14px
+    }
 }
 
 @media (max-width: 991px) {
-	.landing-img {
-		width: 40%;
-		height: auto;
-	}
-
-	form {
-		margin: 0%;
-	}
+    .landing-img {
+        width: 40%;
+        height: auto;
+    }
+    form {
+        margin: 0%;
+    }
 }
 
 @media (max-width: 1000px) {
     .navbar-header {
         float: none;
     }
-    .navbar-left,.navbar-right {
+    .navbar-left, .navbar-right {
         float: none !important;
     }
     .navbar-toggle {
@@ -361,30 +359,31 @@ input[type=checkbox] {
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
     .navbar-fixed-top {
-		top: 0;
-		border-width: 0 0 1px;
-	}
+        top: 0;
+        border-width: 0 0 1px;
+    }
     .navbar-collapse.collapse {
         display: none!important;
     }
     .navbar-nav {
         float: none!important;
-		margin-top: 7.5px;
-	}
-	.navbar-nav>li {
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
         float: none;
     }
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .collapse.in{
-  		display:block !important;
-	}
+    .collapse.in {
+        display: block !important;
+    }
 }
+
 
 /***************************
 ****************************
