@@ -1,35 +1,23 @@
 <div class="row">
     <div class="col-md-12">
-        <h3>Login</h3>
+        <h2>Pending Reviews</h2>
         <hr />
     </div>
 </div>
 
 <div class="row">
     <div class="col-md-12">
-        <div class="row">
-            <div class="col-md-6">
-                <fieldset>
-                    <div class="form-group">
-                        <label class="control-label">Email</label>
-                        <input type="text" ng-model="user.email" class="form-control">
-                    </div>
-                </fieldset>
-            </div>
-            <div class="col-md-6">
-                <fieldset>
-                    <div class="form-group">
-                        <label class="control-label">Password</label>
-                        <input type="password" ng-model="user.password" class="form-control">
-                    </div>
-                </fieldset>
-            </div>
-        </div>
+        <h3>Submitted by: TEST</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus diam, consequat a consectetur
+            id, aliquet non nulla. Nullam dictum velit eu justo aliquam, sit amet commodo augue vestibulum.
+            Suspendisse mi sapien, accumsan at lacinia ac, efficitur sagittis est. Aliquam tortor sem,
+            faucibus at elit sit amet, finibus fermentum nisl. Maecenas consequat ante vel lorem bibendum
+            interdum. Proin et semper nunc. Nulla nec consectetur nulla. In nec mollis tortor. Maecenas
+            non justo finibus, dapibus ex a, ultricies massa. Nullam quis eros vestibulum, elementum
+            tortor vel, vestibulum nibh.</p>
     </div>
-</div>
-
-<div class="row">
     <div class="col-md-12 right">
-        <button class="btn btn-primary" ng-click="loginUser(user)">Login</button>
+        <button class="btn btn-danger" ng-click="delete()">Delete</button>
+        <button class="btn btn-primary" ng-click="approve()">Approve</button>
     </div>
 </div>

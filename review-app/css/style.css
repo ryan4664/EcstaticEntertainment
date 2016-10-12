@@ -8,6 +8,10 @@ body {
     background-color: #D8D8D8;
 }
 
+.right {
+    text-align: right;
+}
+
 .carousel-image {
     opacity: 0.6;
     filter: alpha(opacity=60);
