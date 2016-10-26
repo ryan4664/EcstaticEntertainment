@@ -8,12 +8,13 @@ require_once('../dbconfig.php');
 
 $app = new \Slim\App();
 
-$app->post('/login', 'loginUser');
+$app->post('/wedding', 'sendWeddingMail');
+$app->post('/staff', 'sendStaffMail');
+$app->post('/contact', 'sendContactMail');
 
 $app->run();
 
-// function loginUser(Request $request)
-function loginUser() {
+function loginUser(Request $request) {
 
 	$response_array['status'] = 'Getting here';
   echo json_encode($response_array);

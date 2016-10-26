@@ -4,10 +4,8 @@
 
 	$recipient = "ryan@rdonohue.ca,EcstaticEntertainment@outlook.com";
 
-	//ecstaticentertainment@outlook.com
-
-	$eventType = $_POST['type']; 
-	$fullname = $_POST['fullName']; 
+	$eventType = $_POST['type'];
+	$fullname = $_POST['fullName'];
 	$email = $_POST['emailAddress'];
 	$ceromonies = $_POST['cer'];
 	$ceremoniesDiffLoc = $_POST['cerDiffLoc'];
