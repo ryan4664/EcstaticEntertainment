@@ -14,19 +14,19 @@
                     <div class="form-group">
                         <label for="inputEmail" class="col-lg-2 control-label">Name</label>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="exampleInputEmail1">
+                            <input type="text" class="form-control" ng-model="wedding.name">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputEmail" class="col-lg-2 control-label">Email</label>
                         <div class="col-lg-10">
-                            <input type="email" class="form-control" id="exampleInputEmail1">
+                            <input type="email" class="form-control" ng-model="wedding.email">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="textArea" class="col-lg-2 control-label">Tell Us About Your Event</label>
                         <div class="col-lg-10">
-                            <textarea class="form-control" rows="3" id="textArea"></textarea>
+                            <textarea class="form-control" rows="3" ng-model="wedding.message"></textarea>
                         </div>
                     </div>
                     <div class="form-group">
@@ -34,19 +34,19 @@
                         <div class="col-lg-10">
                             <div class="radio">
                                 <label>
-                                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                  <input type="radio" name="optionsRadios" ng-model="wedding.sameLocation" value="Same Location">
                                   Same Location
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                  <input type="radio" name="optionsRadios" ng-model="wedding.sameLocation"  value="Different Location">
                                     Different Location
                                   </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                <input type="checkbox"> Video Presentation (6x8 Screen)
+                                <input type="checkbox" ng-model="wedding.videoPres"> Video Presentation (6x8 Screen)
                               </label>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                     <div class="form-group">
                         <label for="select" class="col-lg-2 control-label">Uplighting</label>
                         <div class="col-lg-10">
-                            <select class="form-control" id="select">
+                            <select class="form-control" ng-model="wedding.uplightingNumber">
                               <option value="1">1</option>
                               <option value="2">2</option>
                               <option value="3">3</option>
@@ -67,12 +67,16 @@
                     </div>
                     <div class="form-group">
                         <div class="col-lg-10 col-lg-offset-2">
-                            <button type="reset" class="btn btn-default">Cancel</button>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <!-- <button type="reset" class="btn btn-default">Cancel</button> -->
+                            <button ng-click="sendWeddingMail()" class="btn btn-primary">Submit</button>
                         </div>
                     </div>
                 </fieldset>
             </form>
         </div>
     </div>
+
+    <pre>
+       {{wedding | json}}
+    </pre>
 </div>
