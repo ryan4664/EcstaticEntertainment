@@ -7,7 +7,7 @@ function BuildWeddingController($scope, EmailService) {
     $scope.wedding = {};
 
 
-    $scope.sendWeddingMail = function() {
+    $scope.sendWedding = function() {
         if (!$scope.wedding.videoPres) {
             $scope.wedding.videoPres = false;
         }

@@ -86,18 +86,19 @@ function sendStaffMail(Request $request) {
 
 	$subject	= "An email from your Website!";
 
-	$recipient = "ryan@rdonohue.ca,EcstaticEntertainment@outlook.com,Nathan-murray15@hotmail.com ";
+	// $recipient = "ryan@rdonohue.ca,EcstaticEntertainment@outlook.com,Nathan-murray15@hotmail.com ";
+	$recipient = "ryan@rdonohue.ca";
 
 	$name = filter_var($postData['name'], FILTER_SANITIZE_STRING);
 	$email = filter_var($postData['email'], FILTER_SANITIZE_EMAIL);
 	$message = filter_var($postData['message'], FILTER_SANITIZE_STRING);
+	$videoPres = filter_var($postData['videoPres'], FILTER_SANITIZE_EMAIL);
+	$uplightingNumber = filter_var($postData['uplightingNumber'], FILTER_SANITIZE_STRING);
 
-	$mail_body	= "From: " . $fullname . "\r\n";
+	$mail_body	= "From: " . $name . "\r\n";
 	$mail_body	.= "Contact: " . $email . "\r\n";
-	$mail_body	.= "Type: " . $eventType . "\r\n"."\r\n";
+	$mail_body	.= "Type: Staff Party" . "\r\n"."\r\n";
 
-	$mail_body	.= "Ceremony: " . $ceromonies . "\r\n";
-	$mail_body	.= "Ceremony different location: " . $ceremoniesDiffLoc . "\r\n";
 	$mail_body	.= "Video presantation: " . $videoPres . "\r\n";
 	$mail_body	.= "Uplights: " . $uplightingNumber . "\r\n";
 
