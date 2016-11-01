@@ -35,7 +35,13 @@
                             <li><a ui-sref="buildStaff">Staff Party</a></li>
                         </ul>
                     </li>
-                    <li><a ui-sref="testimonies" href="">Testimonies</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reviews <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a ui-sref="reviews">Customer Reviews</a></li>
+                            <li><a ui-sref="submitReview">Submit A Review</a></li>
+                        </ul>
+                    </li>
                     <li><a ui-sref="contact" href="">Contact</a></li>
                 </ul>
             </div>
@@ -62,10 +68,9 @@
     <script src="app.js"></script>
     <!-- Services -->
     <script src="services/email.service.js"></script>
+    <script src="services/review.service.js"></script>
     <!-- Controllers -->
     <script src="pages/approve/approve.controller.js"></script>
-    <script src="pages/approve/approve-modal/approve-modal.controller.js"></script>
-    <script src="pages/approve/delete-modal/delete-modal.controller.js"></script>
     <script src="pages/buildGrad/buildGrad.controller.js"></script>
     <script src="pages/buildStaff/buildStaff.controller.js"></script>
     <script src="pages/buildWedding/buildWedding.controller.js"></script>
@@ -74,7 +79,8 @@
     <script src="pages/login/login.controller.js"></script>
     <script src="pages/offer/offer.controller.js"></script>
     <script src="pages/request/request.controller.js"></script>
-    <script src="pages/testimonies/testimonies.controller.js"></script>
+    <script src="pages/reviews/reviews.controller.js"></script>
+    <script src="pages/submitReview/submitReview.controller.js"></script>
 </body>
 
 </html>

@@ -33,10 +33,15 @@ angular.module('ReviewApp').config(function($stateProvider, $urlRouterProvider) 
             templateUrl: './pages/request/request.html',
             controller: 'RequestController'
         })
-        .state('testimonies', {
-            url: '/testimonies',
-            templateUrl: './pages/testimonies/testimonies.html',
-            controller: 'TestimoniesController'
+        .state('reviews', {
+            url: '/reviews',
+            templateUrl: './pages/reviews/reviews.html',
+            controller: 'ReviewsController'
+        })
+        .state('submitReview', {
+            url: '/submit-review',
+            templateUrl: './pages/submitReview/submitReview.html',
+            controller: 'SubmitReviewController'
         })
         .state('contact', {
             url: '/contact',

@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2>Reviews</h2>
+        <hr />
+    </div>
+</div>
+
+<div class="row" ng-repeat="review in approvedReviewList">
+    <div class="col-md-12">
+        <h3>Submitted by: {{review.reviewed_by}}</h3>
+        <h5>Review Date: {{review.date | date:'medium'}}</h5>
+        <p>{{review.description}}</p>
+    </div>
+</div>

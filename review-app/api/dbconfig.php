@@ -8,8 +8,8 @@
 
   // Database credentials - varial
   define('DBHOST', 'localhost');
-  define('DBUSER', 'rdonohue_reality');
-  define('DBPASS', 'QpZJFX6OwUp7Inl');
-  define('DBNAME', 'rdonohue_reality');
+  define('DBUSER', 'ecstatic_ryan');
+  define('DBPASS', '39R2WH&ZkU5&');
+  define('DBNAME', 'ecstatic_site');
 
 ?>
