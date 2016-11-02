@@ -235,7 +235,7 @@ function submitReview(Request $request) {
 
 			$recipient = "ryan@rdonohue.ca,EcstaticEntertainment@outlook.com,Nathan-murray15@hotmail.com ";
 			//$recipient = "ryan@rdonohue.ca";
-			$mail_body	.= "You have a pending review!  Please go to the website to approve or delete the review". "\r\n";
+			$mail_body	.= "You have a pending review!  Please go to the website to approve or delete the review.  Go here to see pending reviews:". "\r\n" . "http://www.ecstaticentertainmentdjs.com/#/approve";
 
 			$headers = "From: " . $recipient;
 			$headers .= "Reply-To: ". $email;
