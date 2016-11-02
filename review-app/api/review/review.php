@@ -230,7 +230,24 @@ function submitReview(Request $request) {
 
 		if(mysqli_query($conn, $query)) {
 	   	$response_array['status'] = 'Review Submitted';
+
 	    echo json_encode($response_array);
+
+			$recipient = "ryan@rdonohue.ca,EcstaticEntertainment@outlook.com,Nathan-murray15@hotmail.com ";
+			//$recipient = "ryan@rdonohue.ca";
+			$mail_body	.= "You have a pending review!  Please go to the website to approve or delete the review". "\r\n";
+
+			$headers = "From: " . $recipient;
+			$headers .= "Reply-To: ". $email;
+			$headers .= "MIME-Version: 1.0";
+			$headers .= "Content-Type: text/html; charset=ISO-8859-1";
+			$headers = "MIME-Version: 1.0\n" ;
+			$headers .= "Sensitivity: Personal";
+			$headers .= 'X-Mailer: PHP/' . phpversion();
+
+
+			mail($recipient, $subject, $mail_body, $headers) or die("Error!");
+
 	  }
 	  else {
 			echo("Error description: " . mysqli_error($conn));

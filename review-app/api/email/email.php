@@ -49,8 +49,8 @@ function sendWeddingMail(Request $request) {
 
 	$subject	= "An email from your Website!";
 
-	// $recipient = "ryan@rdonohue.ca,EcstaticEntertainment@outlook.com,Nathan-murray15@hotmail.com ";
-	$recipient = "ryan@rdonohue.ca";
+	$recipient = "ryan@rdonohue.ca,EcstaticEntertainment@outlook.com,Nathan-murray15@hotmail.com ";
+	//$recipient = "ryan@rdonohue.ca";
 
 	$name = filter_var($postData['name'], FILTER_SANITIZE_STRING);
 	$email = filter_var($postData['email'], FILTER_SANITIZE_EMAIL);
@@ -62,7 +62,7 @@ function sendWeddingMail(Request $request) {
 	$mail_body	= "From: " . $name . "\r\n";
 	$mail_body	.= "Contact: " . $email . "\r\n";
 	$mail_body	.= "Type: Wedding" . "\r\n"."\r\n";
-
+	$mail_body	.= "Message: " . $message . "\r\n"."\r\n";
 	$mail_body	.= "Ceremony different location: " . $sameLocation . "\r\n";
 	$mail_body	.= "Video presantation: " . $videoPres . "\r\n";
 	$mail_body	.= "Uplights: " . $uplightingNumber . "\r\n";
@@ -86,8 +86,8 @@ function sendStaffMail(Request $request) {
 
 	$subject	= "An email from your Website!";
 
-	// $recipient = "ryan@rdonohue.ca,EcstaticEntertainment@outlook.com,Nathan-murray15@hotmail.com ";
-	$recipient = "ryan@rdonohue.ca";
+	$recipient = "ryan@rdonohue.ca,EcstaticEntertainment@outlook.com,Nathan-murray15@hotmail.com ";
+	//$recipient = "ryan@rdonohue.ca";
 
 	$name = filter_var($postData['name'], FILTER_SANITIZE_STRING);
 	$email = filter_var($postData['email'], FILTER_SANITIZE_EMAIL);
@@ -98,7 +98,7 @@ function sendStaffMail(Request $request) {
 	$mail_body	= "From: " . $name . "\r\n";
 	$mail_body	.= "Contact: " . $email . "\r\n";
 	$mail_body	.= "Type: Staff Party" . "\r\n"."\r\n";
-
+	$mail_body	.= "Message: " . $message . "\r\n"."\r\n";
 	$mail_body	.= "Video presantation: " . $videoPres . "\r\n";
 	$mail_body	.= "Uplights: " . $uplightingNumber . "\r\n";
 

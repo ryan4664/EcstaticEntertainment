@@ -80,6 +80,10 @@ footer>p {
 ****************************
 ***************************/
 
+nav.navbar.navbar-inverse {
+    border-radius: 0;
+}
+
 .navbar-wrapper .navbar {
     border-radius: 0px;
     font-family: 'Droid Sans', sans-serif;
